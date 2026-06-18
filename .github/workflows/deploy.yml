@@ -28,11 +28,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
       - name: Install dependencies
-        # 'npm install' is used instead of 'npm ci' to be auto-healing if package.json and package-lock.json have minor differences
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Compile and build production files
         run: npm run build
