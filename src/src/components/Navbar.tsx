@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { Sparkles, Menu, X, Calendar, User } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-interface AppNavbarProps {
+interface NavbarProps {
   onBookClick: () => void;
   onDashboardClick: () => void;
   currentTab: 'home' | 'dashboard';
   setCurrentTab: (tab: 'home' | 'dashboard') => void;
 }
 
-export default function AppNavbar({ onBookClick, onDashboardClick, currentTab, setCurrentTab }: AppNavbarProps) {
+export default function Navbar({ onBookClick, onDashboardClick, currentTab, setCurrentTab }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
