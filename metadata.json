@@ -1,0 +1,6 @@
+{
+  "name": "NailBar",
+  "description": "A vibrant and elegant website for a luxury nail salon featuring online booking, an interactive services gallery, and a dynamically filterable price list.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
